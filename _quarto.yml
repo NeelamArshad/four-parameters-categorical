@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Four Parameters Categorical"
@@ -8,7 +9,6 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - output-dir: docs
 
 format:
   html:
