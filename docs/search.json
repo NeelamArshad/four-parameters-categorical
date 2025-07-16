@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Four Parameters Categorical",
+    "section": "",
+    "text": "\\[\nP(Y = k) = \\frac{e^{\\beta_{k0} + \\beta_{k1} X_1 + \\beta_{k2} X_2 + \\cdots + \\beta_{kn} X_n}}{\\sum_{j=1}^{K} e^{\\beta_{j0} + \\beta_{j1} X_1 + \\beta_{j2} X_2 + \\cdots + \\beta_{jn} X_n}}\n\\]\nwith \\[\nY \\sim \\text{Multinomial}(\\boldsymbol{\\rho}) \\quad \\text{where} \\quad \\boldsymbol{\\rho} = (\\rho_1, \\rho_2, \\ldots, \\rho_K)\n\\]\n\\[\n\\begin{aligned}\n\\hat{\\rho}_{\\text{Clinton}} &= \\frac{e^{0.455 - 0.255 \\cdot \\text{male}}}{1 + e^{0.455 - 0.255 \\cdot \\text{male}} + e^{-0.852 + 0.420 \\cdot \\text{male}}} \\\\\\\\\n\\hat{\\rho}_{\\text{Perot}}   &= \\frac{e^{-0.852 + 0.420 \\cdot \\text{male}}}{1 + e^{0.455 - 0.255 \\cdot \\text{male}} + e^{-0.852 + 0.420 \\cdot \\text{male}}} \\\\\\\\\n\\hat{\\rho}_{\\text{Bush}}    &= 1 - \\hat{\\rho}_{\\text{Clinton}} - \\hat{\\rho}_{\\text{Perot}}\n\\end{aligned}\n\\]\n\n\n\n\n\n\n\n\n\nVoting behavior in the U.S. varies widely based on demographic characteristics such as gender. Using NES data from 1992, we explore whether men and women voted differently in the Presidential election between Clinton, Bush, and Perot. One limitation of our model is that it assumes the survey data is fully representative of the U.S. voting population, which may not hold due to sampling biases or nonresponse. We model presidential vote choice as a multinomial function of sex, estimating the probability to estimate the probability that a respondent voted for Clinton, Bush, or Perot based on their gender. For example, we estimate that 42.5% of male voters supported Clinton, with a 95% confidence interval from 39.1% to 46.0%, while support among female voters was higher at 52.5% (CI: 49.2% to 55.8%).\n\n\n\n\nTable 1: Estimated Coefficients for 1992 NES Voter Model (Source: 1992 NES)\n\n\n\n\n\n\n\n\n\nModel Estimates for Presidential Vote by Gender\n\n\nOutcome\nTerm\nEstimate\n95% CI Lower\n95% CI Upper\n\n\n\n\nClinton\n(Intercept)\n0.46\n0.31\n0.60\n\n\nClinton\nsexMale\n-0.26\n-0.47\n-0.04\n\n\nPerot\n(Intercept)\n-0.85\n-1.06\n-0.64\n\n\nPerot\nsexMale\n0.42\n0.14\n0.70"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]
