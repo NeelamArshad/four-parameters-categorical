@@ -1,3 +1,9 @@
+.quarto/
 
-*_cache/
+*/_cache/
+_site/
+.Rproj.user
+*.Rhistory
+*.RData
 
+/.quarto/
